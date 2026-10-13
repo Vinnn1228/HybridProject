@@ -1,5 +1,5 @@
 import { Palette } from "@/constants/palette";
-import { Link, router } from "expo-router";
+import { router } from "expo-router";
 import { Component } from "react";
 import {
   KeyboardAvoidingView,
@@ -265,15 +265,6 @@ export default class LoginScreen extends Component<LoginProps, LoginState> {
                   </Text>
                 </TouchableOpacity>
               </View>
-            </View>
-
-            {/* Footer Back Link */}
-            <View className="mt-6 items-center">
-              <Link href="/" className="cursor-pointer">
-                <Text className="text-[13px] font-semibold text-mutedOlive">
-                  ← Return to Home
-                </Text>
-              </Link>
             </View>
           </ScrollView>
         </KeyboardAvoidingView>
