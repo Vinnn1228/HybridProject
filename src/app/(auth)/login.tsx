@@ -1,5 +1,5 @@
 import { Palette } from "@/constants/palette";
-import { router } from "expo-router";
+import { Link, router } from "expo-router";
 import { Component } from "react";
 import {
   KeyboardAvoidingView,
@@ -66,7 +66,7 @@ export default class LoginScreen extends Component<LoginProps, LoginState> {
     } else {
       this.setState({ successMessage: `Welcome back, ${cleanUsername}!` });
       setTimeout(() => {
-        router.replace("/");
+        router.replace("/(tabs)");
       }, 700);
     }
   };
@@ -265,6 +265,11 @@ export default class LoginScreen extends Component<LoginProps, LoginState> {
                   </Text>
                 </TouchableOpacity>
               </View>
+            </View>
+
+            {/* Footer Back Link */}
+            <View className="mt-6 items-center">
+              <Link href="/(tabs)" className="cursor-pointer"></Link>
             </View>
           </ScrollView>
         </KeyboardAvoidingView>
