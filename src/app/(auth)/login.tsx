@@ -1,11 +1,11 @@
 import { Palette } from "@/constants/palette";
 import { Link, router } from "expo-router";
+import { StatusBar } from "expo-status-bar";
 import { Component } from "react";
 import {
   KeyboardAvoidingView,
   Platform,
   ScrollView,
-  StatusBar,
   Text,
   TextInput,
   TouchableOpacity,
@@ -91,7 +91,7 @@ export default class LoginScreen extends Component<LoginProps, LoginState> {
 
     return (
       <SafeAreaView className="flex-1 bg-cream">
-        <StatusBar barStyle="dark-content" backgroundColor={Palette.cream} />
+        <StatusBar style="dark" />
 
         <KeyboardAvoidingView
           className="flex-1"

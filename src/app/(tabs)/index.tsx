@@ -40,7 +40,7 @@ export default class HomeScreen extends Component<HomeProps, HomeState> {
   render() {
     return (
       <SafeAreaView className="flex-1 bg-cream">
-        <StatusBar barStyle="dark-content" backgroundColor={Palette.cream} />
+        <StatusBar barStyle="dark-content" />
         <ScrollView
           contentContainerClassName="px-6 pb-10 pt-4"
           showsVerticalScrollIndicator={false}
