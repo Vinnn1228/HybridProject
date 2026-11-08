@@ -38,3 +38,49 @@ export const CATEGORIES: ServiceCategory[] = [
     route: "/service",
   },
 ];
+
+// Booking data interface
+export interface Booking {
+  id: string;
+  title: string;
+  category: string;
+  date: string;
+  price: string;
+  status: "Upcoming" | "Completed";
+}
+
+// History dummy data
+export const BOOKINGS: Booking[] = [
+  {
+    id: "INV-001",
+    title: "AC & Refrigerator Repair",
+    category: "Appliance Repair",
+    date: "Oct 28, 2026 - 10:00 AM",
+    price: "Rp. 300.000,00",
+    status: "Upcoming",
+  },
+  {
+    id: "INV-002",
+    title: "Deep Home Cleaning",
+    category: "Cleaning",
+    date: "Oct 30, 2026 - 02:00 PM",
+    price: "Rp. 200.000,00",
+    status: "Upcoming",
+  },
+  {
+    id: "INV-003",
+    title: "Leaking Pipe Fix",
+    category: "Plumbing",
+    date: "Oct 10, 2026 - 11:30 AM",
+    price: "Rp. 100.000,00",
+    status: "Completed",
+  },
+  {
+    id: "INV-004",
+    title: "Circuit Breaker Repair",
+    category: "Electrical",
+    date: "Sep 28, 2026 - 09:00 AM",
+    price: "Rp. 150.000,00",
+    status: "Completed",
+  },
+];
