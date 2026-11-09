@@ -84,3 +84,35 @@ export const BOOKINGS: Booking[] = [
     status: "Completed",
   },
 ];
+
+// Tipe data untuk struktur detail servis
+export interface ServiceData {
+  id: number;
+  category: string;
+  title: string;
+  price: string;
+  rating: string;
+  reviews: string;
+  description: string;
+  includes: string[];
+}
+
+// Data statis: Detail Servis
+export const SERVICE_DETAILS: ServiceData[] = [
+  {
+    id: 1,
+    category: "Appliance Repair",
+    title: "AC & Refrigerator Repair",
+    price: "$45.00",
+    rating: "4.8",
+    reviews: "124",
+    description:
+      "Professional repair and deep cleaning for AC units and refrigerators. Includes freon check, leak repair, condenser cleaning, and electrical troubleshooting to ensure your appliances work perfectly.",
+    includes: [
+      "Thorough inspection & diagnosis",
+      "Freon pressure check",
+      "Filter & condenser cleaning",
+      "30-day service warranty",
+    ],
+  },
+];
